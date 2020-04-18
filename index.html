@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>TensorFlow.js Speech Commands Model Demo</title>
+  <link href="/style.e308ff8e.css" rel="stylesheet" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <div class="start-stop">
+    <button id="start" disabled="true">Start</button>
+    <button id="stop" disabled="true">Stop</button>
+  </div>
+  <div class="main-model">
+    <div class="settings">
+      <span style="display:none">Prob. threshold:</span>
+      <input style="display:none" class="settings" size="5" id="proba-threshold" value="0.75">
+    </div>
+    <div id="candidate-words" class="candidate-words-hidden"></div>
+  </div>
+  <div class="footer" style="display: none;">
+    <textarea id="status-display" style="display: block" cols="80" readonly="true"></textarea>
+  </div>
+  <div>
+      <span style="font-weight: bold; font-size: 40px;">Your Prediction is: &nbsp;</span>
+      <span id="predicted-value" style="font-size: 60px; color: blue; font-weight: bold;"></span>
+  </div>
+
+  <script src="/speech-command-transfer-learning.e31bb0bc.js"></script>
+</body>
+
+</html>
